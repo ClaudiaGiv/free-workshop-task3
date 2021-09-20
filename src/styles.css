@@ -1,0 +1,300 @@
+/*  Note to students. Don't worry about any of this CSS code. You'll learn 100% of this material in the upcoming HTML/CSS lessons. */
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;900&display=swap");
+
+body {
+  background-color: #fff;
+}
+
+header {
+  background-color: #fff;
+  margin-bottom: 40px;
+  display: block;
+  box-shadow: 0px 0px 6px #999;
+}
+
+header img {
+  display: block;
+  width: 240px;
+  margin: 0 auto;
+  padding-top: 12px;
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-bottom: 0;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: #888;
+  text-decoration: none;
+  padding: 0 26px 0 0;
+  font-size: 16px;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+header nav ul li a:hover {
+  color: #bdbdbd;
+}
+
+@media all and (min-width: 700px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header img {
+    margin: 8px 0 8px 20px;
+    padding-top: 0;
+    font-size: 42px;
+  }
+
+  header nav {
+    margin-top: 14px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+main .latest-album h2 {
+  margin: 16px 0 20px 0;
+  font-weight: 900;
+  font-size: 28px;
+}
+
+main .latest-album h3 {
+  margin: 30px 0 0 0;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+main .latest-album p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 60px;
+  line-height: 24px;
+}
+
+main .latest-album h4 {
+  margin: 60px 0 0 0;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+main .latest-album .buy {
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+  text-decoration: none;
+  border: 1px solid #000;
+  padding: 16px 32px;
+  margin: 40px 0;
+}
+
+main .latest-album .social-songs {
+  font-weight: 400;
+  font-size: 14px;
+  color: #4b4b4b;
+  text-decoration: none;
+  border: 1px solid #c8c8c8;
+  padding: 2px 8px;
+  margin: 0px 4px 0 0;
+  border-radius: 4px;
+}
+
+main .latest-album a i {
+  padding-right: 12px;
+}
+
+main .latest-album a i.social {
+  padding-right: 6px;
+  margin-bottom: 20px;
+}
+
+hr {
+  margin: 30px 0 20px 0;
+  border-top: 1px solid #e0e0e0;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+main .album-tracks {
+  border-bottom: 1px solid #e6e6e6;
+  padding: 8px 0;
+}
+
+main .track-title,
+main .track-length,
+main .album-tracks .track-num,
+main .album-tracks .track-name {
+  display: inline-block;
+}
+main .track-title p,
+main .track-length p,
+main .track-total p,
+main .album-tracks .track-num p,
+main .album-tracks .track-name p,
+main .album-tracks .track-play {
+  margin: 0;
+}
+
+main .track-title p,
+main .track-length p {
+  color: #c8c8c8;
+}
+
+main .track-length,
+main .track-total {
+  float: right;
+}
+
+main .track-total {
+  margin-top: 8px;
+}
+
+main .track-total span {
+  margin-left: 8px;
+}
+
+main .album-tracks .track-num {
+  margin-right: 20px;
+}
+
+main .album-tracks .track-name p {
+  color: #000;
+}
+
+main .album-tracks .track-play {
+  float: right;
+}
+
+main .album-tracks i {
+  color: #999;
+}
+
+main .album-tracks i span {
+  color: #999;
+  font-family: "Noto Sans JP", sans-serif;
+  margin-left: 10px;
+  font-size: 120%;
+  font-weight: 500;
+}
+
+main .latest-album ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding-bottom: 0;
+  justify-content: space-between;
+  width: 86%;
+}
+
+main .latest-album ul a {
+  font-weight: 400;
+  font-size: 18px;
+  color: #000;
+  text-decoration: none;
+}
+
+main .subheader h1 {
+  margin: 12px 0 30px 0;
+  font-weight: 900;
+  font-size: 48px;
+  text-align: center;
+}
+
+main .subheader h2 {
+  margin: 20px 0 0 0;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+}
+
+main .additional-albums h2 {
+  margin: 12px 0 0 0;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+main .additional-albums h3 {
+  margin: 6px 0 0 0;
+  font-weight: 400;
+  font-size: 16px;
+  color: #777;
+}
+
+main .release-date h4,
+main .release-date p {
+  margin: 0;
+}
+
+main .release-date {
+  margin: 0 0 40px 0;
+}
+
+/* Groups & Items  (Mobile First) */
+.wrapper {
+  width: 100%;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.group img {
+  width: 100%;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+  margin: 10px;
+}
+
+/* Groups & Items  (Desktop) */
+
+@media all and (min-width: 800px) {
+  .wrapper {
+    width: 80%;
+    margin: auto;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+}
+
+footer p {
+  text-align: center;
+  margin-top: 180px;
+  font-size: 14px;
+  color: #777;
+}
